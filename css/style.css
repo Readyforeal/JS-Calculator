@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e1e1e1;
+}
+
+#page{
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    max-height: 800px;
+    max-width: 320px;
+    margin: auto;
+    background-color: #eeeeee;
+}
+
+#calculator-win{
+    width: 100%;
+    height: 100%;
+}
+
+#calc-result{
+    width: 100%;
+    height: 75px;
+    box-sizing: border-box;
+    padding: 10px 20px 0px 20px;
+    background-color: #e9e9e9;
+    border-bottom: 1px solid #ddd;
+}
+
+#calc-input{
+    text-align: right;
+    width: 100%;
+    height: 25%;
+
+    color: #777;
+    font-size: 12pt;
+    font-family: "Roboto Mono", monospace;
+}
+
+#calc-output{
+    text-align: right;
+    line-height: 35px;
+    font-weight: bold;
+    width: 100%;
+    height:75%;
+
+    color: #777;
+    font-size: 20pt;
+    font-family: "Roboto Mono", monospace;
+}
+
+.keypad-btn{
+    background-color: #eeeeee;
+    float: left;
+    width: 25%;
+    height: 75px;
+}
+
+.keypad-op{
+    background-color: #e9e9e9;
+    border-left: 1px solid #ddd;
+}
+    button{
+        
+        border: none;
+        margin: 0;
+        padding: 0;
+
+        color: #777;
+        font-size: 16pt;
+        font-family: "Roboto Mono", monospace;
+    }
+
+    button:hover{
+        background-color: #f5f5f5;
+    }
+
+    button:focus {outline:0;}
+
+    button:active{
+        background-color: #cecece;
+    }
+
+@media only screen and (max-width: 600px){
+
+    #container{
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #calc-keypad{
+        height: 100%;
+    }
+
+    .keypad-btn{
+        float: left;
+        width: 25%;
+        height: 100px;
+    }
+
+}
